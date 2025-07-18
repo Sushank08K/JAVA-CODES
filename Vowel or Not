@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter an alphabet: ");
+        char alphabet = sc.next().charAt(0);
+
+        // Use OR (||) to check multiple values
+        if (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u' ||
+                alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U') {
+            System.out.println("It is a vowel");
+        } else {
+            System.out.println("It is not a vowel");
+        }
+    }
+}
