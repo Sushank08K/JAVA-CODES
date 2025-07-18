@@ -42,7 +42,6 @@ abstract class BankAccount{
         }
     }
 }
-
 class savingsAccount extends BankAccount{
     public savingsAccount(String AccountHolderName, double Balance){
         super(AccountHolderName, Balance);
@@ -53,18 +52,13 @@ class savingsAccount extends BankAccount{
         System.out.println("Account Balance:" +getBalance());
     }
 }
-
 public class Main
 {
 	public static void main(String[] args) {
 	    BankAccount savings =new savingsAccount("Sushank K", 1000.00);
-	    
 	    savings.displayDetails();
-	    
 	    savings.deposit(2000.00);
 	    savings.withdraw(500.00);
-	    
-	    savings.displayDetails();
-		
+	    savings.displayDetails();	
 	}
 }
